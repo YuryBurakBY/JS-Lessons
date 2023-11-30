@@ -1,3 +1,16 @@
+git init
+git status
+git add .
+git commit -m "aaa"
+git push -u
+
+
+
+
+
+
+
+
 git config --global user.name "Tara Routray" 
 git config --global user.email "dev@tararoutray.com" 
 //Как задать имя пользователя 
