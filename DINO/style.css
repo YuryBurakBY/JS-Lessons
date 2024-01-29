@@ -10,5 +10,6 @@
     background-image: url(img/dino.png);
     background-size: 50px 50px;
     position: relative;
+    top: 150px;
    
 }
