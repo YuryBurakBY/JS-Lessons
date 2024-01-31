@@ -1,12 +1,17 @@
 .game {
     width: 1200px;
     height: 600px;
-
     background: #b3dbd3;
     border-bottom: 10px solid #000;
     margin: auto;
-}
-#girl {
+    }
+
+    .timer {
+        this.gameTime = 0;
+        this.timeLimit = 20 * 1000;
+    }
+
+    #girl {
     width: 80px;
     height: 80px;
     background-image: url(img/girl.png);
@@ -15,15 +20,25 @@
     top: 520px;
        }
 
+       #cloud {
+        width: 110px; /*Ширина*/
+        height: 120px; /*высота*/
+        background-image: url(img/cloud.png);
+        background-size: 110px 120px;
+        position: relative;
+        top: 5px; /*на какой высоте летит облако*/
+        left: 1580px;
+        animation: cloudMov 10s infinite linear;} /*скорость облока*/
+
        #crow {
         width: 30px; /*Ширина*/
         height: 40px; /*высота*/
         background-image: url(img/crow.png);
         background-size: 30px 40px;
         position: relative;
-        top: 10px; /*на какой высоте летит ворона*/
-        left: 1780px;
-        animation: crowMov 5s infinite linear;} /*скорость вороны*/
+        top: 5px; /*на какой высоте летит ворона*/
+        left: 1880px;
+        animation: crowMov 4s infinite linear;} /*скорость вороны*/
 
 
        #beet {
@@ -32,19 +47,29 @@
         background-image: url(img/beet.png);
         background-size: 70px 90px;
         position: relative;
-        top: 400px; 
+        top: 280px; 
         left: 780px;
-        animation: beetMov 3s infinite linear; 
+        animation: beetMov 6s infinite linear; /*скорость свеклы*/
     }
 
+
+    @keyframes cloudMov {
+        0% {
+            left: 1100px; /*на каком расстоянии справа начнет лететь ворона*/
+        }
+        100% {
+            left: -10px;
+        }
+       }
 
     @keyframes crowMov {
      0% {
          left: 1100px; /*на каком расстоянии справа начнет лететь ворона*/
      }
      100% {
-         left: -20px;
+         left: -10px;
      }
+   
     }
                
                                                 /*Движение свеклы*/

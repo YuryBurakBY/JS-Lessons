@@ -1,4 +1,5 @@
 const girl = document.getElementById("girl");
+const cloud = document.getElementById("cloud");
 const crow = document.getElementById("crow");
 const beet = document.getElementById("beet");
 
