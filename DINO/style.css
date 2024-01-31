@@ -1,31 +1,56 @@
 .game {
-    width: 900px;
+    width: 1200px;
     height: 600px;
+
+    background: #b3dbd3;
     border-bottom: 10px solid #000;
     margin: auto;
 }
-#dino {
-    width: 70px;
-    height: 70px;
-    background-image: url(img/dino.png);
-    background-size: 70px 70px;
+#girl {
+    width: 80px;
+    height: 80px;
+    background-image: url(img/girl.png);
+    background-size: 80px 80px;
     position: relative;
-    top: 530px;
+    top: 520px;
        }
 
-       #cactus {
-        width: 20px;
-        height: 40px;
-        background-image: url(img/cactus.png);
-        background-size: 20px 40px;
+       #crow {
+        width: 30px; /*Ширина*/
+        height: 40px; /*высота*/
+        background-image: url(img/crow.png);
+        background-size: 30px 40px;
         position: relative;
-        top: 490px; 
+        top: 10px; /*на какой высоте летит ворона*/
+        left: 1780px;
+        animation: crowMov 5s infinite linear;} /*скорость вороны*/
+
+
+       #beet {
+        width: 70px;
+        height: 90px;
+        background-image: url(img/beet.png);
+        background-size: 70px 90px;
+        position: relative;
+        top: 400px; 
         left: 780px;
-        animation: cactusMov 2s infinite linear;
-               }
-               @keyframes cactusMov {
+        animation: beetMov 3s infinite linear; 
+    }
+
+
+    @keyframes crowMov {
+     0% {
+         left: 1100px; /*на каком расстоянии справа начнет лететь ворона*/
+     }
+     100% {
+         left: -20px;
+     }
+    }
+               
+                                                /*Движение свеклы*/
+               @keyframes beetMov {
                 0% {
-                    left: 680px;
+                    left: 1100px;
                 }
                 100% {
                     left: -20px;
@@ -34,24 +59,25 @@
                }
 
                .jump {
-                    animation: jump 0.3s linear;
+                    animation: jump 0.4s linear;
                }
 
                 @keyframes jump {
                     0% {
-                        top: 150px;
+                        top: 130px;  
                     }
                     30% {
-                        top: 130px;
+                        top: 110px;
                     }
                     50% {
-                        top: 80px;
+                        top: 60px;
                     }
                     80% {
-                        top: 130px;
+                        top: 110px; 
                     }
                     100% {
-                        top: 150px;
+                        top: 130px;
                     }
                }
             
+              

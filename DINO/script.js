@@ -1,25 +1,26 @@
-const dino = document.getElementById("dino");
-const cactus = document.getElementById("cactus");
+const girl = document.getElementById("girl");
+const crow = document.getElementById("crow");
+const beet = document.getElementById("beet");
 
 document.addEventListener("keydown", function(event) {
     jump();
 });
 
 function jump () {
-    if (dino.classList != "jump"){
-        dino.classList.add("jump")
+    if (girl.classList != "jump"){
+        girl.classList.add("jump")
     }
     setTimeout(function() {
-        dino.classList.remove("jump")
-    }, 300)
+        girl.classList.remove("jump")
+    }, 500)
 }
 
 
 let isAlive = setInterval ( function(){
-    let dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
-    let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
+    let girlTop = parseInt(window.getComputedStyle(girl).getPropertyValue("top"));
+    let beetLeft = parseInt(window.getComputedStyle(beet).getPropertyValue("left"));
 
-    if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
+    if (beetLeft < 50 && beetLeft > 0 && girlTop >= 140) {
         alert("GAME OVER!!!")
     }
 }, 10)
