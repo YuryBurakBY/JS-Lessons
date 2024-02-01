@@ -25,3 +25,4 @@ let isAlive = setInterval ( function(){
         alert("GAME OVER!!!")
     }
 }, 10)
+

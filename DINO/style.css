@@ -1,33 +1,41 @@
-.game {
-    width: 1200px;
-    height: 600px;
-    background: #b3dbd3;
-    border-bottom: 10px solid #000;
+    .game {
+    width: 1170px;
+    height: 900px;
+    background-image: url("img/field.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin: auto;
-    }
+    border: 4mm ridge rgba(236, 247, 36, 0.514);
+     }
 
-    .timer {
+     figure {
+        margin: 0;
+      }
+      
+
+
+
+   /* .timer {
         this.gameTime = 0;
-        this.timeLimit = 20 * 1000;
-    }
+        this.timeLimit = 20 * 1000; } */
 
     #girl {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     background-image: url(img/girl.png);
-    background-size: 80px 80px;
+    background-size: 120px 120px;
     position: relative;
-    top: 520px;
+    top: 770px;
        }
 
        #cloud {
-        width: 110px; /*Ширина*/
-        height: 120px; /*высота*/
+        width: 240px; /*Ширина*/
+        height: 200px; /*высота*/
         background-image: url(img/cloud.png);
-        background-size: 110px 120px;
+        background-size: 240px 200px;
         position: relative;
-        top: 5px; /*на какой высоте летит облако*/
-        left: 1580px;
+        top: 2px; /*на какой высоте летит облако*/
         animation: cloudMov 10s infinite linear;} /*скорость облока*/
 
        #crow {
@@ -40,25 +48,25 @@
         left: 1880px;
         animation: crowMov 4s infinite linear;} /*скорость вороны*/
 
-
        #beet {
-        width: 70px;
-        height: 90px;
+        width: 140px;
+        height: 180px;
         background-image: url(img/beet.png);
-        background-size: 70px 90px;
+        background-size: 140px 180px;
         position: relative;
-        top: 280px; 
-        left: 780px;
+        top: 360px; 
+        left: 600px;
         animation: beetMov 6s infinite linear; /*скорость свеклы*/
+        
     }
 
 
     @keyframes cloudMov {
         0% {
-            left: 1100px; /*на каком расстоянии справа начнет лететь ворона*/
+            left: 1100px; /*на каком расстоянии справа начнет лететь */
         }
         100% {
-            left: -10px;
+            left: -10px; /*до какого расстоянии справа летит ворона*/
         }
        }
 
@@ -89,20 +97,20 @@
 
                 @keyframes jump {
                     0% {
-                        top: 130px;  
-                    }
+                        top: 130px; 
+                                         }
                     30% {
                         top: 110px;
-                    }
+                                           }
                     50% {
                         top: 60px;
-                    }
+                                      }
                     80% {
                         top: 110px; 
-                    }
+                                           }
                     100% {
                         top: 130px;
-                    }
+                                   }
                }
             
               
