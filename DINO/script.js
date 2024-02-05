@@ -21,7 +21,7 @@ let isAlive = setInterval ( function(){
     let girlTop = parseInt(window.getComputedStyle(girl).getPropertyValue("top"));
     let beetLeft = parseInt(window.getComputedStyle(beet).getPropertyValue("left"));
 
-    if (beetLeft < 50 && beetLeft > 0 && girlTop >= 140) {
+    if (beetLeft < 55 && beetLeft > 0 && girlTop >= 140) {
         alert("GAME OVER!!!")
     }
 }, 10)

@@ -13,12 +13,24 @@
         margin: 0;
       }
       
+    .text {  width: 400px;
+        padding: 20px; /* Поля вокруг текста */
+        margin: 0 0 10em; /* Отступы */
+        display: flex;
+        text-align: center;
+        color: #12e671;
+        background: #b5db0b;
+
+}
+
+    .audio {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+}
 
 
-
-   /* .timer {
-        this.gameTime = 0;
-        this.timeLimit = 20 * 1000; } */
 
     #girl {
     width: 120px;
