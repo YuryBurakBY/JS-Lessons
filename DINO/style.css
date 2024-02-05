@@ -9,17 +9,18 @@
     border: 4mm ridge rgba(236, 247, 36, 0.514);
      }
 
-     figure {
-        margin: 0;
-      }
-      
-    .text {  width: 400px;
-        padding: 20px; /* Поля вокруг текста */
-        margin: 0 0 10em; /* Отступы */
-        display: flex;
-        text-align: center;
-        color: #12e671;
-        background: #b5db0b;
+         
+    .text {  
+        width: 200px;
+        height: 60px;
+        font: bold 24px;
+       /* font-weight: bold;  Жирное начертание */
+       text-align: center;  /*Текст в центре */
+       /*padding: 10px;  Поля вокруг текста */
+        margin: 0 0 7em; /* Отступы */
+        
+        color: #0a0329; /* Цвет текста */
+        background: #7c9705; /* Цвет фона */
 
 }
 
