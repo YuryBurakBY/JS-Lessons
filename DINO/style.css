@@ -11,16 +11,19 @@
 
          
     .text {  
-        width: 200px;
-        height: 60px;
-        font: bold 24px;
-       /* font-weight: bold;  Жирное начертание */
-       text-align: center;  /*Текст в центре */
-       /*padding: 10px;  Поля вокруг текста */
-        margin: 0 0 7em; /* Отступы */
-        
+        width: 50%;
+        height: 50%;
+        font: small-caps bold 24px/1 sans-serif; /*Жирное начертание */
+        text-align: center;  Текст в центре 
+        padding: 10px; /* Поля вокруг текста */
+       
+       margin: auto; /* Отступы */
+       /* border: none; */
+      
         color: #0a0329; /* Цвет текста */
-        background: #7c9705; /* Цвет фона */
+        background: #bad34c; /* Цвет фона */ 
+   
+   
 
 }
 
