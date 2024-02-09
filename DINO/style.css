@@ -8,7 +8,6 @@
     margin: auto;
     border: 4mm ridge rgba(236, 247, 36, 0.514);
      }
-
          
     .text {  
         width: 50%;
@@ -19,18 +18,13 @@
         margin: auto; /* Отступы */
         color: #0a0329; /* Цвет текста */
         background: #bad34c; /* Цвет фона */ 
-     
-
-}
+     }
 
     .audio {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
         width: 10%;
 }
-
-
 
     #girl {
     width: 120px;
@@ -71,7 +65,6 @@
         animation: beetMov 6s infinite linear; /*скорость свеклы*/
         
     }
-
 
     @keyframes cloudMov {
         0% {
