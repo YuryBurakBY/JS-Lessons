@@ -16,14 +16,10 @@
         font: small-caps bold 24px/1 sans-serif; /*Жирное начертание */
         text-align: center;  Текст в центре 
         padding: 10px; /* Поля вокруг текста */
-       
-       margin: auto; /* Отступы */
-       /* border: none; */
-      
+        margin: auto; /* Отступы */
         color: #0a0329; /* Цвет текста */
         background: #bad34c; /* Цвет фона */ 
-   
-   
+     
 
 }
 
